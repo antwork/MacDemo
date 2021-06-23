@@ -18,6 +18,12 @@
 		A954C4802681BD1000858D04 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C47F2681BD1000858D04 /* DetailView.swift */; };
 		A954C4832681BF8400858D04 /* CodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C4822681BF8400858D04 /* CodeCell.swift */; };
 		A954C4872681C38700858D04 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C4862681C38700858D04 /* SectionHeader.swift */; };
+		A954C48F2681E88D00858D04 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C48B2681E88D00858D04 /* PrefsView.swift */; };
+		A954C4902681E88D00858D04 /* NSWindow+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C48C2681E88D00858D04 /* NSWindow+Utils.swift */; };
+		A954C4912681E88D00858D04 /* UserDefaultsPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C48D2681E88D00858D04 /* UserDefaultsPropertyWrapper.swift */; };
+		A954C4922681E88D00858D04 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954C48E2681E88D00858D04 /* Prefs.swift */; };
+		A9FD9DD0268310E200C16F31 /* SamplesHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD9DCF268310E200C16F31 /* SamplesHostingController.swift */; };
+		A9FD9DD42683125100C16F31 /* SamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD9DD32683125100C16F31 /* SamplesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,12 @@
 		A954C47F2681BD1000858D04 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A954C4822681BF8400858D04 /* CodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCell.swift; sourceTree = "<group>"; };
 		A954C4862681C38700858D04 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		A954C48B2681E88D00858D04 /* PrefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsView.swift; sourceTree = "<group>"; };
+		A954C48C2681E88D00858D04 /* NSWindow+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSWindow+Utils.swift"; sourceTree = "<group>"; };
+		A954C48D2681E88D00858D04 /* UserDefaultsPropertyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPropertyWrapper.swift; sourceTree = "<group>"; };
+		A954C48E2681E88D00858D04 /* Prefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		A9FD9DCF268310E200C16F31 /* SamplesHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesHostingController.swift; sourceTree = "<group>"; };
+		A9FD9DD32683125100C16F31 /* SamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,8 @@
 				A954C4822681BF8400858D04 /* CodeCell.swift */,
 				A954C4862681C38700858D04 /* SectionHeader.swift */,
 				A954C47F2681BD1000858D04 /* DetailView.swift */,
+				A9FD9DCE268310B100C16F31 /* SampleUI */,
+				A954C48A2681E88D00858D04 /* Prefs */,
 				A954C4762681BCBD00858D04 /* Data */,
 				A954C46326818C9900858D04 /* Assets.xcassets */,
 				A954C46826818C9900858D04 /* Main.storyboard */,
@@ -98,6 +112,26 @@
 				A954C4792681BCBD00858D04 /* HttpStatus.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A954C48A2681E88D00858D04 /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				A954C48B2681E88D00858D04 /* PrefsView.swift */,
+				A954C48C2681E88D00858D04 /* NSWindow+Utils.swift */,
+				A954C48D2681E88D00858D04 /* UserDefaultsPropertyWrapper.swift */,
+				A954C48E2681E88D00858D04 /* Prefs.swift */,
+			);
+			path = Prefs;
+			sourceTree = "<group>";
+		};
+		A9FD9DCE268310B100C16F31 /* SampleUI */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD9DCF268310E200C16F31 /* SamplesHostingController.swift */,
+				A9FD9DD32683125100C16F31 /* SamplesView.swift */,
+			);
+			path = SampleUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A954C4922681E88D00858D04 /* Prefs.swift in Sources */,
 				A954C46226818C9700858D04 /* ContentView.swift in Sources */,
 				A954C46026818C9700858D04 /* AppDelegate.swift in Sources */,
 				A954C47B2681BCBD00858D04 /* Helper.swift in Sources */,
+				A954C4912681E88D00858D04 /* UserDefaultsPropertyWrapper.swift in Sources */,
+				A9FD9DD42683125100C16F31 /* SamplesView.swift in Sources */,
 				A954C4872681C38700858D04 /* SectionHeader.swift in Sources */,
+				A9FD9DD0268310E200C16F31 /* SamplesHostingController.swift in Sources */,
+				A954C4902681E88D00858D04 /* NSWindow+Utils.swift in Sources */,
 				A954C4802681BD1000858D04 /* DetailView.swift in Sources */,
+				A954C48F2681E88D00858D04 /* PrefsView.swift in Sources */,
 				A954C4832681BF8400858D04 /* CodeCell.swift in Sources */,
 				A954C47C2681BCBD00858D04 /* HttpStatus.swift in Sources */,
 			);
